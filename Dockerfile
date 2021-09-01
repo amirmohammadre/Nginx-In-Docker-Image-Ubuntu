@@ -14,3 +14,10 @@ RUN  rm *
 COPY index.html /var/www/html
 
 EXPOSE 80
+
+COPY start.sh /root/start.sh
+
+WORKDIR /root
+
+CMD ["./start.sh"]
+
